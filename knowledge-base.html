@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Veda Pantha</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default" id="myHeader">
+    <div class="nav-container">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="navbar-brand"><a href="index.html">Home <i class="fa fa-home"></i></a> </li>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Veda Gurukulam</a></li>
+                <li><a href="#">Goshala</a></li>
+                <li><a href="#">Social Service</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Press</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="navbar-brand" style="margin-top:7px;" href="#"><span
+                  style="font-family: 'Noto Sans Devanagari'; font-size: 45px;">&#x0950;</span></a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="w3-container w3-padding" style="background-image: url(assets/images/banner1.png);">
+    <div class="w3-center">
+        <h4 class="w3-large-inner-page w3-animate-zoom">Knowledge Base</h4>  
+    </div>
+  </div>
+
+  <div class="container">
+
+   
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Audio')" id="defaultOpen">Manthra (Audio)</button>
+      <button class="tablinks" onclick="openCity(event, 'Text')">Manthra (Text)</button>
+      <button class="tablinks" onclick="openCity(event, 'Meaning')">Meaning</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Audio" class="tabcontent">
+      <h3>Tatchakshur</h3>
+      <P>
+        <audio controls>
+          <source src="assets/audio-files/chachhakra.aac" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </P>
+    </div>
+
+    <div id="Text" class="tabcontent">
+      <h3>English</h3>
+      <p>Om tatchakshur devahitam purastat chhukram uchcharat<br>
+        pashyema sharadah shatam <br>
+        jivema sharadah shatam <br>
+        shrinuyama sharadah shatam <br>
+        prabravama sharadah shatam <br>
+        adinah syama sharadah shatam <br>
+        bhuyashcha sharadah shatat.</p>
+      <h3>Telugu</h3>
+      <p>ఓం తచ్చక్షుర్ దేవహితం పురస్తాత్ ఛుక్రమం ఉచ్చరాత్ <br>
+        పశ్యేమ శారదః శతమ్ <br>
+        జీవేమ శారదః శతమ్ <br>
+        శృణుయామ శారదః శతమ్ <br>
+        ప్రబ్రహ్మ శారదః శతమ్ <br>
+        ఆదినః శ్యామ శారదః శతమ్ <br>
+        భూయశ్చ శారదః శతత్.</p>
+    </div>
+
+    <div id="Meaning" class="tabcontent">
+      <h3>English</h3>
+      <p>Benefactor of Devotees, I concentrate on Thy pure energy. Give me perfect health. May my eyes, ears, tongue and
+        the others organs function in a proper and healthy way for a hundred years. May I not become helpless and
+        dependent during this time. Give me a hundred years of joyous life free from disease.</p>
+      <h3>Telugu</h3>
+      <p>Benefactor of Devotees, I concentrate on Thy pure energy. Give me perfect health. May my eyes, ears, tongue and
+        the others organs function in a proper and healthy way for a hundred years. May I not become helpless and
+        dependent during this time. Give me a hundred years of joyous life free from disease.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <span>&copy; 2023 Vedapantha. All rights reserved, powered and maintained by Sriker Arya.</span>
+        </div>
+        <div class="col-md-6">
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/watch/SahajaUtsava/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+  </script>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
