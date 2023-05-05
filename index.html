@@ -11,11 +11,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" id="myHeader">
     <div class="nav-container">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -28,7 +29,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="navbar-brand"><a href="index.html">Home <i class="fa fa-home"></i></a> </li>
-            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="knowledge-base.html">Knowledge Base</a></li>
             <li><a href="#">About</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
@@ -53,7 +54,24 @@
     </div>
   </nav>
 
+   <!-- Start Banner wrapper #F44336 -->
+    <div class="w3-container w3-padding" style="background-image: url(assets/images/banner1.png);">
+      <div class="w3-center">
+        <h4 class="w3-large w3-animate-zoom">Veda Pantha, Sandeepani Veda Gurukulam, Ramayanpet, Telangana, India.</h4>
+        <h4 class="w3-small w3-animate-bottom">For the betterment of human race Vedapantha has been founded. For many
+          years numerous researches were done in Ayurveda to eradicate the problem in current time. This is constituted by
+          Epic, religious & ayurvedic scholar Aachaarya Vedakar Ji, the person who explodes and preaches truth and sanity of life.</h5>
+          <div class="w3-padding-32">
+            <a href="knowledge-base.html"><button class="w3-btn w3-xlarge w3-black w3-hover-light-grey"
+                style="font-weight:900;">Know more</button></a>
+          </div>
+      </div>
+    </div>
+    <!-- End Banner Wrapper -->
+
   <div class="container">
+
+   
     <!-- Tab links -->
     <div class="tab">
       <button class="tablinks" onclick="openCity(event, 'Audio')" id="defaultOpen">Manthra (Audio)</button>
@@ -103,49 +121,63 @@
     </div>
   </div>
 
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <span>&copy; 2023 Vedapantha. All rights reserved, powered and maintained by Sriker Arya.</span>
-          </div>
-          <div class="col-md-6">
-            <ul class="social-icons">
-              <li><a href="https://www.facebook.com/watch/SahajaUtsava/"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-          </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <span>&copy; 2023 Vedapantha. All rights reserved, powered and maintained by Sriker Arya.</span>
+        </div>
+        <div class="col-md-6">
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/watch/SahajaUtsava/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script>
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
+  <script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 
-      function openCity(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
 
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
       }
 
-    </script>
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+  </script>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 
 </body>
 
