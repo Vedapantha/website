@@ -5,8 +5,10 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 100px;
 }
 
+/* Navigation */
 .navbar-default {
   border-color: #2e6da4 !important;
   color: #fff;
@@ -85,6 +87,31 @@ nav a {
   background-color: transparent;
 }
 
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  z-index:21;
+  top: -1%;
+  width: 100%
+}
+
+/* Navigation END */
+
+/* Slider */
+
+.w3-animate-zoom {animation:animatezoom 1s; }@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-bottom {animation:animatezoom 1s;}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-center {max-width: 1140px; margin: 0 auto;}
+.w3-large {font-size: 45px !important; font-weight: 600; color: #fff; line-height: 1.4em; font-family: "Montserrat", Sans-serif; margin-top: 5%;}
+.w3-large-inner-page {font-size: 30px !important; font-weight: 600; color: #fff; line-height: 1.4em; font-family: "Montserrat", Sans-serif; margin: 5%;}
+.w3-small {font-size: 16px !important; font-weight: 300; color: #fff; line-height: 2em; font-family: "Lato", Sans-serif;}
+.w3-container {
+  margin-top: -20px;
+  margin-bottom: 30px;
+  /* border-top: #f1f1f1 1px solid; */
+  background-size:cover; background-color: #2e6da4; opacity: 1; transition: background 0.3s, border-radius 0.3s, opacity 0.3s;}
+/* Slider END */
+
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -132,7 +159,7 @@ nav a {
   to {opacity: 1;}
 }
 
-
+/* Footer */
 footer {
   padding: 20px;
   position: fixed !important;
@@ -141,6 +168,7 @@ footer {
   background-color: #2e6da4;
   color: #fff;
   text-align: center;
+  font: 1em sans-serif;
 }
 
 .social-icons {
@@ -162,7 +190,7 @@ footer {
   color: #fff;
   font-size: 20px;
 }
-
+/* Footer END */
 
 @media (max-width: 768px) {
   .navbar-nav {
