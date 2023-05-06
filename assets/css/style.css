@@ -27,7 +27,7 @@
 .dropdown-menu {
   background-color: #2e6da4 !important;
   border-radius: 0 !important;
-  margin-top: 5px !important;
+  margin-top: 10px !important;
 }
 
 .dropdown-menu li a:hover{
@@ -74,7 +74,7 @@ nav a {
 }
 
 .navbar-toggle {
-    margin-top: 10px;
+    margin-top: 15px !important;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
