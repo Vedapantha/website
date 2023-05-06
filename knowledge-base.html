@@ -2,81 +2,96 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Veda Pantha</title>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Veda Pantha</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
 
 <body>
-  <div w3-include-html="includes/header.html"></div>
+<div w3-include-html="includes/header.html"></div>
 
-  <div class="w3-container w3-padding" style="background-image: url(assets/images/banner1.png);">
+<div class="w3-container w3-padding" style="background-image: url(assets/images/banner-inner.png);">
     <div class="w3-center">
-        <h4 class="w3-large-inner-page w3-animate-zoom">Knowledge Base</h4>  
+        <h4 class="w3-large-inner-page w3-animate-zoom">Knowledge Base</h4>
     </div>
-  </div>
+</div>
 
-  <div class="container">
-    <!-- Tab links -->
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'Audio')" id="defaultOpen">Manthra (Audio)</button>
-      <button class="tablinks" onclick="openCity(event, 'Text')">Manthra (Text)</button>
-      <button class="tablinks" onclick="openCity(event, 'Meaning')">Meaning</button>
+<div class="container">
+    <div class="row">
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Audio')" id="defaultOpen">Manthra (Audio)</button>
+            <button class="tablinks" onclick="openCity(event, 'Text')">Manthra (Text)</button>
+            <button class="tablinks" onclick="openCity(event, 'Meaning')">Meaning</button>
+        </div>
+        <!-- Tab content -->
+        <div id="Audio" class="tabcontent">
+            <h3>Tach-chakṣhur</h3>
+            <P>
+                <audio controls>
+                    <source src="assets/audio-files/chachhakra.aac" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </P>
+        </div>
+        <div id="Text" class="tabcontent">
+            <h3>English</h3>
+            <p>Om tach-chakṣhur-devahitam purastaach-chhukram-uchcharat <br>
+                pashyema sharadaḥ shatañ <br>
+                jeevema sharadaḥ shatam̈ <br>
+                shṛiṇuyaama sharadaḥ shatam <br>
+                pra bravaama sharadaḥ shatam <br>
+                adeenaaḥ syaama sharadaḥ shatam <br>
+                bhooyash-cha sharadaḥ shataaat.</p>
+            <h3>తెలుగు</h3>
+            <p>ఓ౩మ్ తచ్ఛక్షుర్దేవహితం పురాస్తాచ్ఛుక్రముచ్చరత్| పశ్యేమ శరదః శతం<br>
+                జీవేమ శరదః శతం శృణుయామ శరదః శతం ప్ర బ్రవామ శరదః <br>
+                శతమదీనాః స్యామ శరదః శతం భూయశ్చ శరదః శతాత్ || యజు 36-24||
+            </p>
+            <h3>हिंदी</h3>
+            <p>तच्चक्षु॑र्दे॒वहि॑तं पु॒रस्ता॑च्छु॒क्रमुच्च॑रत्। पश्ये॑म श॒रदः॑ श॒तं जीवे॑म श॒रदः॑ श॒तꣳ शृणु॑याम श॒रदः॑ श॒तं प्र ब्र॑वाम श॒रदः॑ श॒तमदी॑नाः स्याम श॒रदः॑ श॒तं भूय॑श्च श॒रदः॑ श॒तात्||</p>
+        </div>
+        <div id="Meaning" class="tabcontent">
+            <h3>English</h3>
+            <p>His is the Divine Eye that shows the way to all righteous people. Everywhere we turn, we
+                find His Eye present in front of us, shedding Light, and ever watchful of our movements.
+                May we live for a hundred years and, in our daily life perceive His living Presence in all
+                our actions. For a hundred years may we listen to His Glory and Majesty as described in
+                the Knowledge He revealed (in Vedas, Upanishads etc.), and even proclaim such Glory for
+                all to hear. With God as our Guide, may we never be subjected for a hundred years, and
+                even for more than a hundred years.</p>
+            <h3>తెలుగు</h3>
+            <p>సర్వద్రష్ట, విద్వాంసులకు పరమ హితకారకుడు, సృష్టికి పూర్వము, అనంతరము, మధ్యలోను సత్య స్వరూపమున ఉండు వాడు,
+                సకల సృష్టి కర్తయును అగు
+                ఆ బ్రహ్మను మేము వంద సంవత్సరముల పర్యంతము చూచుదుము గాక! వంద సంవత్సరముల పర్యంతము జీవింతుము గాక!
+                వంద సంవత్సరముల వరకు విందుము గాక! వంద సంవత్సరముల వరకు ఆ బ్రహ్మనే ఉపదేశింతుము గాక! అతని కృపచే
+                వందసంవత్సరముల వరకు
+                ఎవరికిని ఆధీనులము కాక స్వతంత్రులమై జీవింతుము గాక! ఆ పరమేశ్వరుని ఆజ్ఞనే పాలింతుము గాక! <br>
+                మా శరీరము ఆరోగ్యమును కలిగి, ఇంద్రియములు బల దాయకములై , మనస్సు పవిత్రమై , ఆత్మ ఆనందముతో ఉండు గాక!
+            </p>
+            <h3>हिंदी</h3>
+            <p>हे परमेश्वर ! आपकी कृपा और आपके विज्ञान से आपकी रचना को देखते हुए आपके साथ युक्त नीरोग और सावधान हुए हम लोग
+                समस्त इन्द्रियों से युक्त सौ वर्ष से भी अधिक जीवें, सत्य शास्त्रों और गुणों को सुनें, वेदादि को पढ़ावें, सत्य का उपदेश करें,
+                कभी किसी वस्तु के विना पराधीन न हों, सदैव स्वतन्त्र हुए निरन्तर आनन्द भोगें और दूसरों को आनन्दित करें ॥२४ ॥ इस अध्याय में परमेश्वर की प्रार्थना,
+                [सद्गुणावाप्ति], सब के सुख का भान, आपस में मित्रता करने की आवश्यकता, दिनचर्या का शोधन, धर्म का लक्षण, अवस्था का बढ़ना और परमेश्वर का
+                जानना कहा है, इससे इस अध्याय के अर्थ की पूर्व अध्याय में कहे अर्थ के साथ संगति है, ऐसा जानना चाहिये ॥ इति श्रीमत्परमहंसपरिव्राजकाचार्याणां
+                श्रीमत्परमविदुषां श्रीविरजानन्दसरस्वतीस्वामिनां शिष्येण श्रीपरमहंसपरिव्राजकाचार्येण श्रीमद्दयानन्दसरस्वतीस्वामिना विरचिते संस्कृतार्य्यभाषाभ्यां समन्विते यजुर्वेदभाष्ये
+                षट्त्रिंशोऽध्यायः पूर्त्तिमगात्
+            </p>
+        </div>
     </div>
+</div>
+<div w3-include-html="includes/footer.html"></div>
 
-    <!-- Tab content -->
-    <div id="Audio" class="tabcontent">
-      <h3>Tatchakshur</h3>
-      <P>
-        <audio controls>
-          <source src="assets/audio-files/chachhakra.aac" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </P>
-    </div>
-
-    <div id="Text" class="tabcontent">
-      <h3>English</h3>
-      <p>Om tatchakshur devahitam purastat chhukram uchcharat<br>
-        pashyema sharadah shatam <br>
-        jivema sharadah shatam <br>
-        shrinuyama sharadah shatam <br>
-        prabravama sharadah shatam <br>
-        adinah syama sharadah shatam <br>
-        bhuyashcha sharadah shatat.</p>
-      <h3>Telugu</h3>
-      <p>ఓం తచ్చక్షుర్ దేవహితం పురస్తాత్ ఛుక్రమం ఉచ్చరాత్ <br>
-        పశ్యేమ శారదః శతమ్ <br>
-        జీవేమ శారదః శతమ్ <br>
-        శృణుయామ శారదః శతమ్ <br>
-        ప్రబ్రహ్మ శారదః శతమ్ <br>
-        ఆదినః శ్యామ శారదః శతమ్ <br>
-        భూయశ్చ శారదః శతత్.</p>
-    </div>
-
-    <div id="Meaning" class="tabcontent">
-      <h3>English</h3>
-      <p>Benefactor of Devotees, I concentrate on Thy pure energy. Give me perfect health. May my eyes, ears, tongue and
-        the others organs function in a proper and healthy way for a hundred years. May I not become helpless and
-        dependent during this time. Give me a hundred years of joyous life free from disease.</p>
-      <h3>Telugu</h3>
-      <p>Benefactor of Devotees, I concentrate on Thy pure energy. Give me perfect health. May my eyes, ears, tongue and
-        the others organs function in a proper and healthy way for a hundred years. May I not become helpless and
-        dependent during this time. Give me a hundred years of joyous life free from disease.</p>
-    </div>
-  </div>
-
-  <div w3-include-html="includes/footer.html"></div>
-
-  <script>
+<script>
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
@@ -101,8 +116,9 @@
       evt.currentTarget.className += " active";
     }
 
-  </script>
-  <script>w3IncludeHTML();</script>
+
+</script>
+<script>w3IncludeHTML();</script>
 </body>
 
 </html>
