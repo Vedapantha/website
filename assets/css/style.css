@@ -93,7 +93,7 @@ nav a {
 .w3-animate-zoom {animation:animatezoom 1s; }@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .w3-animate-bottom {animation:animatezoom 1s;}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .w3-center {max-width: 1140px; margin: 0 auto;}
-.font-large {font-size: 20px !important; font-weight: 600; color: #fff; line-height: 2.4em; font-family: "Montserrat", Sans-serif; margin-top: 5%;}
+.font-large {font-size: 20px !important; font-weight: 600; color: #fff; line-height: 1.4em; font-family: "Montserrat", Sans-serif; margin-top: 5%;}
 .w3-large-inner-page {font-size: 30px !important; font-weight: 600; color: #fff; line-height: 1.4em; font-family: "Montserrat", Sans-serif; margin: 5%;}
 .w3-small {font-size: 16px !important; font-weight: 300; color: #fff; line-height: 2em; font-family: "Lato", Sans-serif;}
 .w3-container {
