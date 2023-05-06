@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Veda Pantha</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <!-- Gallery related -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+<div w3-include-html="includes/header.html"></div>
+
+<div class="w3-container w3-padding" style="background-image: url(assets/images/banner1.png);">
+    <div class="w3-center">
+        <h4 class="w3-large-inner-page w3-animate-zoom">About us</h4>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <h2>Sandipani Veda Gurukulam</h2>
+        <p>
+            For the betterment of human race Vedapantha has been founded. For many
+            years numerous researches were done in Ayurveda to eradicate the problem in current time. This is
+            constituted by
+            Epic, religious & ayurvedic scholar Aachaarya Vedakar Ji, the person who explodes and preaches truth and
+            sanity
+            of life.
+        </p>
+    </div>
+    <div class="row">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <a href="#">
+                <img src="assets/images/gallery/1.jpeg" alt="Image 1">
+            </a>
+            <a href="#">
+                <img src="assets/images/gallery/2.jpeg" alt="Image 2">
+            </a>
+            <a href="#">
+                <img src="assets/images/gallery/3.jpeg" alt="Image 3">
+            </a>
+            <a href="#">
+                <img src="assets/images/gallery/4.jpeg" alt="Image 4">
+            </a>
+            <a href="#">
+                <img src="assets/images/gallery/5.jpeg" alt="Image 5">
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div w3-include-html="includes/footer.html"></div>
+
+<script>w3IncludeHTML();</script>
+
+<script>
+      var flkty = new Flickity('.gallery', {
+        prevNextButtons: true,
+        pageDots: true,
+        wrapAround: true,
+        autoPlay: 5000
+      });
+</script>
+</body>
+
+</html>

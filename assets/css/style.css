@@ -9,6 +9,10 @@
   margin-bottom: 150px;
 }
 
+.row {
+    margin: 0;
+}
+
 /* Navigation */
 .navbar-default {
   border-color: #2e6da4 !important;
@@ -192,6 +196,40 @@ footer {
   font-size: 20px;
 }
 /* Footer END */
+
+/* Gallery */
+.gallery {
+  width: 80%;
+  margin: auto;
+}
+
+.gallery img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.gallery-cell img {
+  width: 100%;
+  height: auto;
+}
+
+.flickity-page-dots {
+  bottom: 10px !important;
+}
+
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 8px;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background-color: #fff;
+}
+
+/* Gallery END */
 
 @media (max-width: 768px) {
   .navbar-nav {
