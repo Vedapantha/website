@@ -25,24 +25,85 @@
 </div>
 
 <div class="container">
-    <div class="row">
+    <div class="tabcontent-set">
         <!-- Tab links -->
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Audio')" id="defaultOpen">Manthra (Audio)</button>
-            <button class="tablinks" onclick="openCity(event, 'Text')">Manthra (Text)</button>
-            <button class="tablinks" onclick="openCity(event, 'Meaning')">Meaning</button>
+            <button class="tablinks" onclick="openTab(event, 'Audio1')">Manthra (Audio)</button>
+            <button class="tablinks" onclick="openTab(event, 'Text1')">Manthra (Text)</button>
+            <button class="tablinks" onclick="openTab(event, 'Meaning1')">Meaning</button>
         </div>
         <!-- Tab content -->
-        <div id="Audio" class="tabcontent">
-            <h3>Tach-chakṣhur</h3>
+        <div id="Audio1" class="tabcontent">
+            <h3>Om Bhoorbhuvah Swah</h3>
             <P>
                 <audio controls>
-                    <source src="assets/audio-files/chachhakra.aac" type="audio/mpeg">
+                    <source src="assets/audio-files/bhoorbhuvah.aac" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </P>
         </div>
-        <div id="Text" class="tabcontent">
+        <div id="Text1" class="tabcontent">
+            <h3>English</h3>
+            <p>Om bhoorbhuvah swah| <br>
+                Tat Savitur Varenyam <br>
+                Bhargo Devasya Dhimahi <br>
+                Dhiyo Yonah Prachodayat. || <br>
+                | Yajur 36-12 & Rig 3-62-10|</p>
+            <h3>తెలుగు</h3>
+            <p>ఓ౩మ్ భూర్భువః స్వః| తత్సవితుర్వరేణ్యం <br>
+                భర్గో దేవస్య ధీమహి| <br>
+                ధియో యో నః ప్రచోదయాత్ || <br>
+                || యజు 36-12 & ఋక్ 3-62-10||
+            </p>
+            <h3>हिंदी</h3>
+            <p>ओ३म् भूर्भुवः॒ स्वः। <br>
+                तत्स॑वि॒तुर्वरे॑ण्यं॒ <br>
+                भर्गो॑ दे॒वस्य॑ धीमहि। <br>
+                धियो॒ यो नः॑ प्रचो॒दया॑त् ॥ <br>
+                ॥ yajur 36-3 & rig 3-62-10॥</p>
+        </div>
+        <div id="Meaning1" class="tabcontent">
+            <h3>English</h3>
+            <p>O men! we meditate upon and try to imbibe in us, that most desirable light of God which eradicates sins
+                and Who is the Creator and Parameshwar of the world. He is resplendent and illuminator of
+                all and Omnipresent and indwelling spirit, so that He may inspire and purify our intellects to
+                perform always good deeds.
+            </p>
+            <h3>తెలుగు</h3>
+            <p>ఓ మానవులారా! మనమెల్లరము (య) ఏ (నః) మనయొక్క (ధియం) బుద్ధులను (ప్రచోదయాత్) ఉత్తమగుణ కర్మ స్వభావములందు
+                ప్రేరణ మొనర్చనో, అట్టి (సవితుః) సంపూర్ణవిశ్వమును ఉత్పన్నమొనర్చువాడు మరియు సమస్త ఐశ్వర్యములతో గూడిన స్వామి, మరియు (దేవస్య)
+                సకలైశ్వర్యములదాత, ప్రకాశవంతుడు, సర్వమును ప్రకాశపరచువాడు, సర్వవ్యాపకుడు, సర్వాంతర్యామిని (తత్) అట్టి (వరేణ్యమ్) సర్వోత్తముడు,
+                వరించదగిన (భర్గ:) పాపరూప రుఃఖముల మూలమును నష్టపరచు ప్రభాశాలిని (ధీమహి) ధారణమొనర్తుము <br>
+
+                భావార్థము:- ఏ మనుష్యులు సర్వసాక్షి, తండ్రివంటివాడు, న్యాయకారి, దయాళువు, శుద్ధుడు, సనాతనుడు, సర్వాత్మల సాక్షియగు
+                ఆపరమాత్మనే స్తుతి ప్రార్థనలచే ఉపాసించెదరో ఆయనను దయాసాగరుడు, సర్వశ్రేష్టుడగు, పరమేశ్వరుడు మనను దుష్టాచరణలనుండి
+                వేరుగానుంచి శ్రేష్ఠ ఆచరణములందు ప్రవృత్తిపరచి పవిత్రము మరియు పురుషార్థపరులనుగా చేసి ధర్మార్థ కామమోక్షములను ప్రాప్తింపజేయుగాక!
+            </p>
+            <h3>हिंदी</h3>
+            <p>जो मनुष्य सबके साक्षी, पिता के सदृश वर्त्तमान, न्यायेश, दयालु, शुद्ध, सनातन, सबके आत्माओं के साक्षी परमात्मा की ही स्तुति और प्रार्थना करके उपासना
+                करते हैं, उनको कृपा का समुद्र सबसे श्रेष्ठ परमेश्वर, दुष्ट आचरण से पृथक् करके श्रेष्ठ आचरण में प्रवृत्त करा और पवित्र तथा पुरुषार्थयुक्त करके धर्म,
+                अर्थ, काम और मोक्ष को प्राप्त कराता है|
+            </p>
+        </div>
+    </div>
+    <div class="tabcontent-set">
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Audio2')">Manthra (Audio)</button>
+            <button class="tablinks" onclick="openTab(event, 'Text2')">Manthra (Text)</button>
+            <button class="tablinks" onclick="openTab(event, 'Meaning2')">Meaning</button>
+        </div>
+        <!-- Tab content -->
+        <div id="Audio2" class="tabcontent">
+            <h3>Tach-chakṣhur</h3>
+            <P>
+                <audio controls>
+                    <source src="assets/audio-files/tachchakshur.aac" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </P>
+        </div>
+        <div id="Text2" class="tabcontent">
             <h3>English</h3>
             <p>Om tach-chakṣhur-devahitam purastaach-chhukram-uchcharat <br>
                 pashyema sharadaḥ shatañ <br>
@@ -59,7 +120,7 @@
             <h3>हिंदी</h3>
             <p>तच्चक्षु॑र्दे॒वहि॑तं पु॒रस्ता॑च्छु॒क्रमुच्च॑रत्। पश्ये॑म श॒रदः॑ श॒तं जीवे॑म श॒रदः॑ श॒तꣳ शृणु॑याम श॒रदः॑ श॒तं प्र ब्र॑वाम श॒रदः॑ श॒तमदी॑नाः स्याम श॒रदः॑ श॒तं भूय॑श्च श॒रदः॑ श॒तात्||</p>
         </div>
-        <div id="Meaning" class="tabcontent">
+        <div id="Meaning2" class="tabcontent">
             <h3>English</h3>
             <p>His is the Divine Eye that shows the way to all righteous people. Everywhere we turn, we
                 find His Eye present in front of us, shedding Light, and ever watchful of our movements.
@@ -92,29 +153,51 @@
 <div w3-include-html="includes/footer.html"></div>
 
 <script>
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+    window.onload = function() {
+      openFirstTab();
+    };
+    function openFirstTab() {
+        // Get all elements with class="tabcontent-set" and loop through them
+        let tabcontentSets = document.getElementsByClassName("tabcontent-set");
 
-    function openCity(evt, cityName) {
-      // Declare all variables
-      var i, tabcontent, tablinks;
+        for (let i = 0; i < tabcontentSets.length; i++) {
+        // Get the first tabcontent element and show it
+        let tabcontent = tabcontentSets[i].getElementsByClassName("tabcontent")[0];
+        tabcontent.style.display = "block";
 
-      // Get all elements with class="tabcontent" and hide them
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-
-      // Get all elements with class="tablinks" and remove the class "active"
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-
-      // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
+        // Get the first tablink element and add the "active" class
+        let tablink = tabcontentSets[i].getElementsByClassName("tablinks")[0];
+        tablink.className += " active";
+        }
     }
+</script>
+
+<script>
+function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get the tab content and tab links for this tab set
+  var tabset = evt.currentTarget.closest('.tabcontent-set');
+  tabcontent = tabset.getElementsByClassName('tabcontent');
+  tablinks = tabset.getElementsByClassName('tablinks');
+
+  // Hide all tab content except for the current tab
+  for (i = 0; i < tabcontent.length; i++) {
+    if (tabcontent[i].id === tabName) {
+      tabcontent[i].style.display = "block";
+    } else {
+      tabcontent[i].style.display = "none";
+    }
+  }
+
+  // Set the active class on the clicked tab link
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  evt.currentTarget.className += " active";
+}
+
 </script>
 <script>w3IncludeHTML();</script>
 </body>

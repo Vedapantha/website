@@ -67,12 +67,14 @@
 <script>w3IncludeHTML();</script>
 
 <script>
-      var flkty = new Flickity('.gallery', {
-        prevNextButtons: true,
-        pageDots: true,
-        wrapAround: true,
-        autoPlay: 5000
-      });
+    window.onload = function() {
+            var flkty = new Flickity('.gallery', {
+            prevNextButtons: true,
+            pageDots: true,
+            wrapAround: true,
+            autoPlay: 5000
+          });
+    };
 </script>
 </body>
 
