@@ -142,6 +142,11 @@ nav a {
 .tabcontent {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
+/* Tab END */
+
+.homepage-icon-size {
+    font-size: 8em;
+}
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
