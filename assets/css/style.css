@@ -6,7 +6,7 @@
   margin-right: auto;
   margin-left: auto;
   min-height: 70vh;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 
 .row {
@@ -184,7 +184,7 @@ footer {
 
 /* Gallery */
 .gallery {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
